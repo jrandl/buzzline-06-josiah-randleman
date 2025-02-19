@@ -60,56 +60,32 @@ def generate_messages():
     """
     Generate a stream of JSON messages.
     """
-    ADJECTIVES = ["amazing", "funny", "boring", "exciting", "weird"]
-    ACTIONS = ["found", "saw", "tried", "shared", "loved"]
-    TOPICS = [
-        "a movie",
-        "a meme",
-        "an app",
-        "a trick",
-        "a story",
-        "Python",
-        "JavaScript",
-        "recipe",
-        "travel",
-        "game",
-    ]
-    AUTHORS = ["Alice", "Bob", "Charlie", "Eve"]
-    KEYWORD_CATEGORIES = {
-        "meme": "humor",
-        "Python": "tech",
-        "JavaScript": "tech",
-        "recipe": "food",
-        "travel": "travel",
-        "movie": "entertainment",
-        "game": "gaming",
-    }
+    USERS = ["Alice", "Bob", "Charlie", "Eve", "Frank", "Grace"]
+    MERCHANT_CATEGORIES = ["Grocery", "Gas Station", "Online Shopping", "Restaurant", "Retail Store"]
+    PURCHASE_LOCATION = [64401, 64448, 64439, 64506, 64436, 64048, 64469, 64456, 64461, 64739, 64730, 66767, 64067, 64633, 65326, 65803, 65742, 66006, 66032]
+    HOME_LOCATION = [64401, 64448, 64439, 64506, 64436, 64048, 64469, 64456, 64461, 64739, 64730, 66767, 64067, 64633, 65326, 65803, 65742, 66006, 66032]
+    CARD_TYPES = ["Debit", "Credit"]
+
     while True:
-        adjective = random.choice(ADJECTIVES)
-        action = random.choice(ACTIONS)
-        topic = random.choice(TOPICS)
-        author = random.choice(AUTHORS)
-        message_text = f"I just {action} {topic}! It was {adjective}."
+        users = random.choice(USERS)
+        merchants_category = random.choice(MERCHANT_CATEGORIES)
+        purchase_location = random.choice(PURCHASE_LOCATION)
+        home_location = random.choice(HOME_LOCATION)
+        card_type = random.choice(CARD_TYPES)
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-        # Find category based on keywords
-        keyword_mentioned = next(
-            (word for word in KEYWORD_CATEGORIES if word in topic), "other"
-        )
-        category = KEYWORD_CATEGORIES.get(keyword_mentioned, "other")
-
-        # Assess sentiment
-        sentiment = assess_sentiment(message_text)
+        # Generate a random transaction amount between $1.00 and $500.00
+        amount = round(random.uniform(1.00, 1000.00), 2)
 
         # Create JSON message
         json_message = {
-            "message": message_text,
-            "author": author,
+            "name": users,
+            "merchant": merchants_category,
+            "amount": amount,
+            "purchase_location": purchase_location,
+            "home_location": home_location,
+            "type": card_type,
             "timestamp": timestamp,
-            "category": category,
-            "sentiment": sentiment,
-            "keyword_mentioned": keyword_mentioned,
-            "message_length": len(message_text),
         }
 
         yield json_message

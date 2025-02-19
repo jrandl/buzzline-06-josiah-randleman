@@ -1,38 +1,25 @@
 """
-kafka_consumer_case.py
-
-Consume json messages from a live data file. 
-Insert the processed messages into a database.
-
-Example JSON message
-{
-    "message": "I just shared a meme! It was amazing.",
-    "author": "Charlie",
-    "timestamp": "2025-01-29 14:35:20",
-    "category": "humor",
-    "sentiment": 0.87,
-    "keyword_mentioned": "meme",
-    "message_length": 42
-}
-
-Database functions are in consumers/db_sqlite_case.py.
-Environment variables are in utils/utils_config module. 
+consumer_josiah_randleman.py
 """
 
 #####################################
 # Import Modules
 #####################################
 
-# import from standard library
 import json
 import os
 import pathlib
 import sys
+import time
+import sqlite3
+import datetime
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
-# import external modules
+# Import Kafka consumer utilities
 from kafka import KafkaConsumer
 
-# import from local modules
+# Import from local modules
 import utils.utils_config as config
 from utils.utils_consumer import create_kafka_consumer
 from utils.utils_logger import logger
@@ -40,7 +27,7 @@ from utils.utils_producer import verify_services, is_topic_available
 
 # Ensure the parent directory is in sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from consumers.db_sqlite_case import init_db, insert_message
+from consumers.sql_lite_config_randleman import init_db, insert_message
 
 #####################################
 # Function to process a single message
@@ -59,13 +46,13 @@ def process_message(message: dict) -> None:
     logger.info(f"   {message=}")
     try:
         processed_message = {
-            "message": message.get("message"),
-            "author": message.get("author"),
+            "name": message.get("name"),
+            "merchant": message.get("merchant"),
+            "amount": float(message.get("amount", 0.0)),
+            "purchase_location": int(message.get("purchase_location", 0)),
+            "home_location": int(message.get("home_location", 0)),
+            "type": message.get("type"),
             "timestamp": message.get("timestamp"),
-            "category": message.get("category"),
-            "sentiment": float(message.get("sentiment", 0.0)),
-            "keyword_mentioned": message.get("keyword_mentioned"),
-            "message_length": int(message.get("message_length", 0)),
         }
         logger.info(f"Processed message: {processed_message}")
         return processed_message

@@ -76,7 +76,7 @@
 # ======================================================
 # ESSENTIAL TOOLS
 # ======================================================
-
+matplotlib
 # Up-to-date package management tools
 pip
 setuptools

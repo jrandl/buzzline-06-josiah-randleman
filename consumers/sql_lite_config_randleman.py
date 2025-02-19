@@ -1,22 +1,3 @@
-""" db_sqlite_case.py 
-
-Has the following functions:
-- init_db(config): Initialize the SQLite database and create the 'streamed_messages' table if it doesn't exist.
-- insert_message(message, config): Insert a single processed message into the SQLite database.
-
-Example JSON message
-{
-    "message": "I just shared a meme! It was amazing.",
-    "author": "Charlie",
-    "timestamp": "2025-01-29 14:35:20",
-    "category": "humor",
-    "sentiment": 0.87,
-    "keyword_mentioned": "meme",
-    "message_length": 42
-}
-
-"""
-
 #####################################
 # Import Modules
 #####################################
@@ -54,22 +35,24 @@ def init_db(db_path: pathlib.Path):
             cursor = conn.cursor()
             logger.info("SUCCESS: Got a cursor to execute SQL.")
 
-            cursor.execute("DROP TABLE IF EXISTS streamed_messages;")
+            cursor.execute("DROP TABLE IF EXISTS transactions;")
 
             cursor.execute(
                 """
-                CREATE TABLE IF NOT EXISTS streamed_messages (
+                CREATE TABLE IF NOT EXISTS transactions (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    message TEXT,
-                    author TEXT,
-                    timestamp TEXT,
-                    category TEXT,
-                    sentiment REAL,
-                    keyword_mentioned TEXT,
-                    message_length INTEGER
+                    name TEXT,
+                    merchant TEXT,
+                    amount REAL,
+                    purchase_location INTEGER,
+                    home_location INTEGER,
+                    type TEXT,
+                    timestamp TEXT
                 )
-            """
+                """
             )
+
+
             conn.commit()
         logger.info(f"SUCCESS: Database initialized and table ready at {db_path}.")
     except Exception as e:
@@ -93,30 +76,43 @@ def insert_message(message: dict, db_path: pathlib.Path) -> None:
     logger.info(f"{message=}")
     logger.info(f"{db_path=}")
 
-    STR_PATH = str(db_path)
     try:
-        with sqlite3.connect(STR_PATH) as conn:
+        # Extract fields safely from the message dictionary
+        category = message.get("category", "unknown")
+        author = message.get("author", "anonymous")
+        sentiment = float(message.get("sentiment", 0.0))
+        timestamp = message.get("timestamp", "unknown")
+        message_text = message.get("message", "")
+        keyword_mentioned = message.get("keyword_mentioned", "")
+        message_length = int(message.get("message_length", 0))
+
+        with sqlite3.connect(db_path) as conn:
             cursor = conn.cursor()
+
             cursor.execute(
                 """
-                INSERT INTO streamed_messages (
-                    message, author, timestamp, category, sentiment, keyword_mentioned, message_length
-                ) VALUES (?, ?, ?, ?, ?, ?, ?)
-            """,
+                INSERT INTO transactions (name, merchant, amount, purchase_location, home_location, type, timestamp)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+                """,
                 (
-                    message["message"],
-                    message["author"],
-                    message["timestamp"],
-                    message["category"],
-                    message["sentiment"],
-                    message["keyword_mentioned"],
-                    message["message_length"],
+                    message.get("name"),
+                    message.get("merchant"),
+                    float(message.get("amount", 0.0)),
+                    int(message.get("purchase_location", 0)),
+                    int(message.get("home_location", 0)),
+                    message.get("type"),
+                    message.get("timestamp"),
                 ),
             )
+
+            
+
             conn.commit()
-        logger.info("Inserted one message into the database.")
+            logger.info("Inserted one message into the database.")
+
     except Exception as e:
         logger.error(f"ERROR: Failed to insert message into the database: {e}")
+
 
 
 #####################################
@@ -136,7 +132,7 @@ def delete_message(message_id: int, db_path: pathlib.Path) -> None:
     try:
         with sqlite3.connect(STR_PATH) as conn:
             cursor = conn.cursor()
-            cursor.execute("DELETE FROM streamed_messages WHERE id = ?", (message_id,))
+            cursor.execute("DELETE FROM transactions WHERE id = ?", (message_id,))
             conn.commit()
         logger.info(f"Deleted message with id {message_id} from the database.")
     except Exception as e:

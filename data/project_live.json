@@ -1,196 +1,94 @@
-{"name": "Bob", "merchant": "Restaurant", "amount": 502.86, "purchase_location": 65742, "home_location": 66006, "type": "Credit", "timestamp": "2025-02-19 22:41:04"}
-{"name": "Bob", "merchant": "Grocery", "amount": 635.18, "purchase_location": 66767, "home_location": 64461, "type": "Debit", "timestamp": "2025-02-19 22:41:09"}
-{"name": "Frank", "merchant": "Gas Station", "amount": 556.48, "purchase_location": 64456, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 22:41:14"}
-{"name": "Bob", "merchant": "Online Shopping", "amount": 369.62, "purchase_location": 64633, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 22:41:19"}
-{"name": "Grace", "merchant": "Online Shopping", "amount": 845.26, "purchase_location": 65803, "home_location": 64461, "type": "Debit", "timestamp": "2025-02-19 22:41:24"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 404.0, "purchase_location": 64401, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 22:41:29"}
-{"name": "Bob", "merchant": "Online Shopping", "amount": 43.97, "purchase_location": 66032, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 22:41:34"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 530.48, "purchase_location": 65742, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 22:41:39"}
-{"name": "Charlie", "merchant": "Grocery", "amount": 930.08, "purchase_location": 64401, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 22:41:44"}
-{"name": "Grace", "merchant": "Retail Store", "amount": 55.91, "purchase_location": 64448, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 22:41:49"}
-{"name": "Charlie", "merchant": "Retail Store", "amount": 632.03, "purchase_location": 65803, "home_location": 66032, "type": "Credit", "timestamp": "2025-02-19 22:41:54"}
-{"name": "Alice", "merchant": "Grocery", "amount": 92.81, "purchase_location": 65326, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 22:41:59"}
-{"name": "Charlie", "merchant": "Restaurant", "amount": 472.87, "purchase_location": 66006, "home_location": 64739, "type": "Credit", "timestamp": "2025-02-19 22:42:05"}
-{"name": "Frank", "merchant": "Gas Station", "amount": 145.53, "purchase_location": 65803, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 22:42:10"}
-{"name": "Alice", "merchant": "Restaurant", "amount": 657.71, "purchase_location": 65803, "home_location": 66006, "type": "Debit", "timestamp": "2025-02-19 22:42:15"}
-{"name": "Frank", "merchant": "Gas Station", "amount": 460.56, "purchase_location": 66767, "home_location": 64436, "type": "Debit", "timestamp": "2025-02-19 22:42:20"}
-{"name": "Eve", "merchant": "Gas Station", "amount": 558.13, "purchase_location": 65326, "home_location": 64048, "type": "Debit", "timestamp": "2025-02-19 22:42:25"}
-{"name": "Alice", "merchant": "Grocery", "amount": 828.87, "purchase_location": 64739, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 22:42:30"}
-{"name": "Eve", "merchant": "Restaurant", "amount": 81.44, "purchase_location": 66032, "home_location": 66767, "type": "Credit", "timestamp": "2025-02-19 22:42:35"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 184.35, "purchase_location": 64067, "home_location": 66032, "type": "Debit", "timestamp": "2025-02-19 22:42:40"}
-{"name": "Grace", "merchant": "Restaurant", "amount": 700.58, "purchase_location": 66767, "home_location": 64739, "type": "Credit", "timestamp": "2025-02-19 22:42:45"}
-{"name": "Grace", "merchant": "Retail Store", "amount": 915.36, "purchase_location": 64448, "home_location": 65326, "type": "Credit", "timestamp": "2025-02-19 22:42:50"}
-{"name": "Charlie", "merchant": "Grocery", "amount": 434.07, "purchase_location": 65803, "home_location": 64439, "type": "Debit", "timestamp": "2025-02-19 22:42:55"}
-{"name": "Bob", "merchant": "Restaurant", "amount": 474.73, "purchase_location": 64730, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 22:43:00"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 486.94, "purchase_location": 64506, "home_location": 64067, "type": "Credit", "timestamp": "2025-02-19 22:43:05"}
-{"name": "Eve", "merchant": "Grocery", "amount": 349.34, "purchase_location": 64506, "home_location": 64456, "type": "Credit", "timestamp": "2025-02-19 22:43:10"}
-{"name": "Bob", "merchant": "Gas Station", "amount": 239.99, "purchase_location": 64506, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 22:43:15"}
-{"name": "Eve", "merchant": "Gas Station", "amount": 504.95, "purchase_location": 64730, "home_location": 66032, "type": "Debit", "timestamp": "2025-02-19 22:43:20"}
-{"name": "Charlie", "merchant": "Retail Store", "amount": 358.06, "purchase_location": 64469, "home_location": 64739, "type": "Credit", "timestamp": "2025-02-19 22:43:25"}
-{"name": "Alice", "merchant": "Retail Store", "amount": 987.88, "purchase_location": 64448, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 22:43:30"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 837.76, "purchase_location": 64067, "home_location": 64048, "type": "Debit", "timestamp": "2025-02-19 22:43:35"}
-{"name": "Alice", "merchant": "Restaurant", "amount": 952.65, "purchase_location": 64401, "home_location": 64067, "type": "Debit", "timestamp": "2025-02-19 22:43:40"}
-{"name": "Bob", "merchant": "Grocery", "amount": 87.41, "purchase_location": 65326, "home_location": 64067, "type": "Credit", "timestamp": "2025-02-19 22:43:45"}
-{"name": "Grace", "merchant": "Online Shopping", "amount": 140.56, "purchase_location": 64436, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 22:43:50"}
-{"name": "Frank", "merchant": "Grocery", "amount": 374.71, "purchase_location": 64401, "home_location": 64067, "type": "Debit", "timestamp": "2025-02-19 22:43:55"}
-{"name": "Charlie", "merchant": "Grocery", "amount": 472.02, "purchase_location": 64506, "home_location": 65803, "type": "Credit", "timestamp": "2025-02-19 22:44:00"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 7.35, "purchase_location": 64461, "home_location": 64067, "type": "Credit", "timestamp": "2025-02-19 22:44:05"}
-{"name": "Grace", "merchant": "Retail Store", "amount": 206.99, "purchase_location": 64456, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 22:44:10"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 799.25, "purchase_location": 65326, "home_location": 64506, "type": "Credit", "timestamp": "2025-02-19 22:44:15"}
-{"name": "Frank", "merchant": "Online Shopping", "amount": 510.17, "purchase_location": 64633, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 22:44:20"}
-{"name": "Bob", "merchant": "Restaurant", "amount": 662.86, "purchase_location": 66767, "home_location": 64469, "type": "Credit", "timestamp": "2025-02-19 22:44:25"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 169.41, "purchase_location": 64048, "home_location": 66767, "type": "Credit", "timestamp": "2025-02-19 22:44:30"}
-{"name": "Grace", "merchant": "Grocery", "amount": 444.23, "purchase_location": 64048, "home_location": 64739, "type": "Credit", "timestamp": "2025-02-19 22:44:35"}
-{"name": "Grace", "merchant": "Gas Station", "amount": 998.02, "purchase_location": 64461, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 22:44:40"}
-{"name": "Frank", "merchant": "Online Shopping", "amount": 481.42, "purchase_location": 65742, "home_location": 65742, "type": "Credit", "timestamp": "2025-02-19 22:44:45"}
-{"name": "Alice", "merchant": "Restaurant", "amount": 997.35, "purchase_location": 65326, "home_location": 64469, "type": "Credit", "timestamp": "2025-02-19 22:44:50"}
-{"name": "Charlie", "merchant": "Gas Station", "amount": 680.41, "purchase_location": 64067, "home_location": 65326, "type": "Debit", "timestamp": "2025-02-19 22:44:55"}
-{"name": "Grace", "merchant": "Gas Station", "amount": 446.68, "purchase_location": 64456, "home_location": 65742, "type": "Credit", "timestamp": "2025-02-19 22:45:00"}
-{"name": "Eve", "merchant": "Online Shopping", "amount": 402.32, "purchase_location": 64456, "home_location": 66006, "type": "Credit", "timestamp": "2025-02-19 22:45:05"}
-{"name": "Frank", "merchant": "Restaurant", "amount": 614.49, "purchase_location": 66032, "home_location": 66006, "type": "Credit", "timestamp": "2025-02-19 22:45:10"}
-{"name": "Frank", "merchant": "Restaurant", "amount": 149.02, "purchase_location": 64067, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 22:45:15"}
-{"name": "Bob", "merchant": "Retail Store", "amount": 751.02, "purchase_location": 64439, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 22:45:20"}
-{"name": "Alice", "merchant": "Gas Station", "amount": 557.15, "purchase_location": 64633, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 22:45:25"}
-{"name": "Bob", "merchant": "Gas Station", "amount": 299.23, "purchase_location": 66032, "home_location": 65803, "type": "Debit", "timestamp": "2025-02-19 22:45:30"}
-{"name": "Eve", "merchant": "Grocery", "amount": 935.05, "purchase_location": 64469, "home_location": 66032, "type": "Credit", "timestamp": "2025-02-19 22:45:35"}
-{"name": "Bob", "merchant": "Online Shopping", "amount": 315.85, "purchase_location": 65803, "home_location": 65803, "type": "Credit", "timestamp": "2025-02-19 22:45:40"}
-{"name": "Charlie", "merchant": "Restaurant", "amount": 574.55, "purchase_location": 65803, "home_location": 65742, "type": "Credit", "timestamp": "2025-02-19 22:45:45"}
-{"name": "Alice", "merchant": "Gas Station", "amount": 578.05, "purchase_location": 66006, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 22:45:50"}
-{"name": "Eve", "merchant": "Gas Station", "amount": 170.99, "purchase_location": 64461, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 22:45:55"}
-{"name": "Eve", "merchant": "Gas Station", "amount": 891.47, "purchase_location": 64456, "home_location": 64739, "type": "Credit", "timestamp": "2025-02-19 22:46:00"}
-{"name": "Grace", "merchant": "Grocery", "amount": 37.87, "purchase_location": 64067, "home_location": 65326, "type": "Credit", "timestamp": "2025-02-19 22:46:05"}
-{"name": "Grace", "merchant": "Grocery", "amount": 805.61, "purchase_location": 64506, "home_location": 65803, "type": "Debit", "timestamp": "2025-02-19 22:46:10"}
-{"name": "Eve", "merchant": "Retail Store", "amount": 882.91, "purchase_location": 66767, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 22:46:15"}
-{"name": "Alice", "merchant": "Retail Store", "amount": 13.38, "purchase_location": 65742, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 22:46:20"}
-{"name": "Charlie", "merchant": "Grocery", "amount": 670.3, "purchase_location": 64456, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 22:46:25"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 385.91, "purchase_location": 64456, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 22:46:30"}
-{"name": "Eve", "merchant": "Online Shopping", "amount": 122.87, "purchase_location": 64448, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 22:46:35"}
-{"name": "Alice", "merchant": "Grocery", "amount": 668.53, "purchase_location": 66767, "home_location": 64048, "type": "Debit", "timestamp": "2025-02-19 22:46:40"}
-{"name": "Eve", "merchant": "Retail Store", "amount": 778.01, "purchase_location": 65742, "home_location": 64456, "type": "Debit", "timestamp": "2025-02-19 22:46:45"}
-{"name": "Eve", "merchant": "Restaurant", "amount": 633.6, "purchase_location": 64436, "home_location": 65803, "type": "Debit", "timestamp": "2025-02-19 22:46:50"}
-{"name": "Eve", "merchant": "Gas Station", "amount": 481.55, "purchase_location": 64436, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 22:46:55"}
-{"name": "Bob", "merchant": "Gas Station", "amount": 819.1, "purchase_location": 64048, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 22:47:00"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 871.06, "purchase_location": 64461, "home_location": 64461, "type": "Debit", "timestamp": "2025-02-19 22:47:05"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 191.42, "purchase_location": 64401, "home_location": 64436, "type": "Debit", "timestamp": "2025-02-19 22:47:10"}
-{"name": "Eve", "merchant": "Restaurant", "amount": 909.56, "purchase_location": 64401, "home_location": 64469, "type": "Debit", "timestamp": "2025-02-19 22:47:15"}
-{"name": "Eve", "merchant": "Retail Store", "amount": 380.36, "purchase_location": 66032, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 22:47:20"}
-{"name": "Charlie", "merchant": "Grocery", "amount": 273.67, "purchase_location": 64506, "home_location": 66767, "type": "Credit", "timestamp": "2025-02-19 22:47:25"}
-{"name": "Charlie", "merchant": "Retail Store", "amount": 906.42, "purchase_location": 64067, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 22:47:30"}
-{"name": "Frank", "merchant": "Grocery", "amount": 270.72, "purchase_location": 64461, "home_location": 64436, "type": "Debit", "timestamp": "2025-02-19 22:47:35"}
-{"name": "Frank", "merchant": "Online Shopping", "amount": 504.25, "purchase_location": 65326, "home_location": 66006, "type": "Debit", "timestamp": "2025-02-19 22:47:40"}
-{"name": "Charlie", "merchant": "Grocery", "amount": 976.89, "purchase_location": 64506, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 22:47:45"}
-{"name": "Frank", "merchant": "Grocery", "amount": 930.26, "purchase_location": 64456, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 22:47:50"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 55.07, "purchase_location": 64469, "home_location": 64469, "type": "Debit", "timestamp": "2025-02-19 22:47:55"}
-{"name": "Alice", "merchant": "Grocery", "amount": 571.5, "purchase_location": 64048, "home_location": 66032, "type": "Credit", "timestamp": "2025-02-19 22:48:00"}
-{"name": "Charlie", "merchant": "Restaurant", "amount": 318.06, "purchase_location": 64456, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 22:48:05"}
-{"name": "Alice", "merchant": "Online Shopping", "amount": 57.72, "purchase_location": 64469, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 22:48:10"}
-{"name": "Charlie", "merchant": "Retail Store", "amount": 730.34, "purchase_location": 64506, "home_location": 64456, "type": "Debit", "timestamp": "2025-02-19 22:48:15"}
-{"name": "Frank", "merchant": "Restaurant", "amount": 94.39, "purchase_location": 66032, "home_location": 64448, "type": "Credit", "timestamp": "2025-02-19 22:48:20"}
-{"name": "Grace", "merchant": "Restaurant", "amount": 497.71, "purchase_location": 64048, "home_location": 65326, "type": "Credit", "timestamp": "2025-02-19 22:48:25"}
-{"name": "Eve", "merchant": "Online Shopping", "amount": 851.37, "purchase_location": 64439, "home_location": 66767, "type": "Credit", "timestamp": "2025-02-19 22:48:30"}
-{"name": "Eve", "merchant": "Grocery", "amount": 601.36, "purchase_location": 65803, "home_location": 65326, "type": "Debit", "timestamp": "2025-02-19 22:48:35"}
-{"name": "Eve", "merchant": "Grocery", "amount": 968.74, "purchase_location": 64436, "home_location": 64506, "type": "Credit", "timestamp": "2025-02-19 22:48:40"}
-{"name": "Bob", "merchant": "Restaurant", "amount": 983.02, "purchase_location": 64436, "home_location": 66767, "type": "Credit", "timestamp": "2025-02-19 22:48:45"}
-{"name": "Charlie", "merchant": "Retail Store", "amount": 482.42, "purchase_location": 65326, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 22:48:50"}
-{"name": "Alice", "merchant": "Online Shopping", "amount": 859.92, "purchase_location": 66767, "home_location": 64456, "type": "Credit", "timestamp": "2025-02-19 22:48:55"}
-{"name": "Grace", "merchant": "Restaurant", "amount": 839.98, "purchase_location": 64436, "home_location": 64456, "type": "Debit", "timestamp": "2025-02-19 22:49:00"}
-{"name": "Eve", "merchant": "Grocery", "amount": 93.88, "purchase_location": 65326, "home_location": 66032, "type": "Credit", "timestamp": "2025-02-19 22:49:05"}
-{"name": "Charlie", "merchant": "Retail Store", "amount": 335.84, "purchase_location": 64439, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 22:49:10"}
-{"name": "Charlie", "merchant": "Retail Store", "amount": 958.47, "purchase_location": 64067, "home_location": 64067, "type": "Credit", "timestamp": "2025-02-19 22:49:15"}
-{"name": "Alice", "merchant": "Retail Store", "amount": 243.03, "purchase_location": 64401, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 22:49:20"}
-{"name": "Alice", "merchant": "Restaurant", "amount": 120.07, "purchase_location": 64461, "home_location": 66032, "type": "Credit", "timestamp": "2025-02-19 22:49:25"}
-{"name": "Frank", "merchant": "Gas Station", "amount": 678.12, "purchase_location": 65742, "home_location": 64448, "type": "Credit", "timestamp": "2025-02-19 22:49:30"}
-{"name": "Eve", "merchant": "Restaurant", "amount": 512.8, "purchase_location": 65803, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 22:49:35"}
-{"name": "Grace", "merchant": "Online Shopping", "amount": 187.19, "purchase_location": 64730, "home_location": 64469, "type": "Credit", "timestamp": "2025-02-19 22:49:40"}
-{"name": "Bob", "merchant": "Retail Store", "amount": 318.27, "purchase_location": 64730, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 22:49:45"}
-{"name": "Grace", "merchant": "Grocery", "amount": 871.41, "purchase_location": 64730, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 22:49:50"}
-{"name": "Frank", "merchant": "Grocery", "amount": 426.23, "purchase_location": 65742, "home_location": 64506, "type": "Credit", "timestamp": "2025-02-19 22:49:55"}
-{"name": "Alice", "merchant": "Online Shopping", "amount": 142.0, "purchase_location": 65742, "home_location": 64456, "type": "Debit", "timestamp": "2025-02-19 22:50:00"}
-{"name": "Charlie", "merchant": "Gas Station", "amount": 742.65, "purchase_location": 65326, "home_location": 64067, "type": "Debit", "timestamp": "2025-02-19 22:50:05"}
-{"name": "Eve", "merchant": "Online Shopping", "amount": 780.79, "purchase_location": 64436, "home_location": 64436, "type": "Debit", "timestamp": "2025-02-19 22:50:10"}
-{"name": "Bob", "merchant": "Online Shopping", "amount": 741.98, "purchase_location": 64401, "home_location": 64439, "type": "Debit", "timestamp": "2025-02-19 22:50:15"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 659.01, "purchase_location": 64448, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 22:50:20"}
-{"name": "Grace", "merchant": "Grocery", "amount": 388.6, "purchase_location": 64730, "home_location": 66767, "type": "Credit", "timestamp": "2025-02-19 22:50:25"}
-{"name": "Alice", "merchant": "Retail Store", "amount": 505.53, "purchase_location": 66032, "home_location": 65326, "type": "Credit", "timestamp": "2025-02-19 22:50:30"}
-{"name": "Bob", "merchant": "Gas Station", "amount": 298.96, "purchase_location": 64436, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 22:50:35"}
-{"name": "Alice", "merchant": "Gas Station", "amount": 99.85, "purchase_location": 64633, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 22:50:40"}
-{"name": "Alice", "merchant": "Restaurant", "amount": 899.67, "purchase_location": 64633, "home_location": 64469, "type": "Debit", "timestamp": "2025-02-19 22:50:45"}
-{"name": "Bob", "merchant": "Online Shopping", "amount": 546.77, "purchase_location": 64506, "home_location": 64469, "type": "Credit", "timestamp": "2025-02-19 22:50:50"}
-{"name": "Eve", "merchant": "Grocery", "amount": 927.33, "purchase_location": 64448, "home_location": 64469, "type": "Credit", "timestamp": "2025-02-19 22:50:55"}
-{"name": "Grace", "merchant": "Retail Store", "amount": 209.03, "purchase_location": 64436, "home_location": 66032, "type": "Credit", "timestamp": "2025-02-19 22:51:00"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 201.83, "purchase_location": 66767, "home_location": 64439, "type": "Debit", "timestamp": "2025-02-19 22:51:05"}
-{"name": "Eve", "merchant": "Grocery", "amount": 938.82, "purchase_location": 64730, "home_location": 66006, "type": "Debit", "timestamp": "2025-02-19 22:51:10"}
-{"name": "Charlie", "merchant": "Gas Station", "amount": 31.41, "purchase_location": 66032, "home_location": 64469, "type": "Debit", "timestamp": "2025-02-19 22:51:15"}
-{"name": "Charlie", "merchant": "Gas Station", "amount": 376.92, "purchase_location": 64739, "home_location": 64506, "type": "Credit", "timestamp": "2025-02-19 22:51:20"}
-{"name": "Bob", "merchant": "Restaurant", "amount": 615.36, "purchase_location": 64469, "home_location": 64067, "type": "Credit", "timestamp": "2025-02-19 22:51:25"}
-{"name": "Charlie", "merchant": "Restaurant", "amount": 378.95, "purchase_location": 65326, "home_location": 64469, "type": "Debit", "timestamp": "2025-02-19 22:51:30"}
-{"name": "Alice", "merchant": "Online Shopping", "amount": 509.93, "purchase_location": 65742, "home_location": 65742, "type": "Credit", "timestamp": "2025-02-19 22:51:35"}
-{"name": "Grace", "merchant": "Restaurant", "amount": 595.88, "purchase_location": 65803, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 22:51:40"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 77.69, "purchase_location": 64067, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 22:51:45"}
-{"name": "Alice", "merchant": "Online Shopping", "amount": 20.91, "purchase_location": 64439, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 22:51:50"}
-{"name": "Eve", "merchant": "Online Shopping", "amount": 208.75, "purchase_location": 66006, "home_location": 64439, "type": "Credit", "timestamp": "2025-02-19 22:51:55"}
-{"name": "Bob", "merchant": "Retail Store", "amount": 147.14, "purchase_location": 64739, "home_location": 64461, "type": "Debit", "timestamp": "2025-02-19 22:52:00"}
-{"name": "Eve", "merchant": "Restaurant", "amount": 124.59, "purchase_location": 66032, "home_location": 64067, "type": "Debit", "timestamp": "2025-02-19 22:52:05"}
-{"name": "Alice", "merchant": "Retail Store", "amount": 58.76, "purchase_location": 64048, "home_location": 64730, "type": "Credit", "timestamp": "2025-02-19 22:52:10"}
-{"name": "Grace", "merchant": "Retail Store", "amount": 320.87, "purchase_location": 65742, "home_location": 65803, "type": "Debit", "timestamp": "2025-02-19 22:52:15"}
-{"name": "Eve", "merchant": "Online Shopping", "amount": 78.17, "purchase_location": 64739, "home_location": 64448, "type": "Credit", "timestamp": "2025-02-19 22:52:20"}
-{"name": "Charlie", "merchant": "Gas Station", "amount": 118.08, "purchase_location": 64461, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 22:52:25"}
-{"name": "Grace", "merchant": "Online Shopping", "amount": 337.11, "purchase_location": 64730, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 22:52:30"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 674.87, "purchase_location": 64448, "home_location": 65326, "type": "Debit", "timestamp": "2025-02-19 22:52:35"}
-{"name": "Grace", "merchant": "Retail Store", "amount": 408.96, "purchase_location": 64456, "home_location": 64436, "type": "Debit", "timestamp": "2025-02-19 22:52:40"}
-{"name": "Grace", "merchant": "Gas Station", "amount": 624.75, "purchase_location": 64461, "home_location": 64506, "type": "Credit", "timestamp": "2025-02-19 22:52:45"}
-{"name": "Alice", "merchant": "Gas Station", "amount": 285.94, "purchase_location": 64469, "home_location": 64439, "type": "Credit", "timestamp": "2025-02-19 22:52:50"}
-{"name": "Eve", "merchant": "Online Shopping", "amount": 406.52, "purchase_location": 64739, "home_location": 64439, "type": "Debit", "timestamp": "2025-02-19 22:52:55"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 635.6, "purchase_location": 65803, "home_location": 64461, "type": "Debit", "timestamp": "2025-02-19 22:53:00"}
-{"name": "Frank", "merchant": "Gas Station", "amount": 641.12, "purchase_location": 65742, "home_location": 64469, "type": "Debit", "timestamp": "2025-02-19 22:53:05"}
-{"name": "Grace", "merchant": "Restaurant", "amount": 576.1, "purchase_location": 65803, "home_location": 64448, "type": "Debit", "timestamp": "2025-02-19 22:53:10"}
-{"name": "Alice", "merchant": "Online Shopping", "amount": 278.02, "purchase_location": 64469, "home_location": 65326, "type": "Credit", "timestamp": "2025-02-19 22:53:15"}
-{"name": "Grace", "merchant": "Restaurant", "amount": 197.83, "purchase_location": 64456, "home_location": 64461, "type": "Credit", "timestamp": "2025-02-19 22:53:20"}
-{"name": "Eve", "merchant": "Retail Store", "amount": 840.52, "purchase_location": 65742, "home_location": 66032, "type": "Debit", "timestamp": "2025-02-19 22:53:25"}
-{"name": "Charlie", "merchant": "Grocery", "amount": 227.06, "purchase_location": 64739, "home_location": 64739, "type": "Credit", "timestamp": "2025-02-19 22:53:30"}
-{"name": "Alice", "merchant": "Retail Store", "amount": 98.81, "purchase_location": 64401, "home_location": 66006, "type": "Credit", "timestamp": "2025-02-19 22:53:35"}
-{"name": "Bob", "merchant": "Grocery", "amount": 126.8, "purchase_location": 64506, "home_location": 64456, "type": "Debit", "timestamp": "2025-02-19 22:53:40"}
-{"name": "Eve", "merchant": "Restaurant", "amount": 763.72, "purchase_location": 64048, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 22:53:45"}
-{"name": "Frank", "merchant": "Online Shopping", "amount": 503.43, "purchase_location": 64448, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 22:53:50"}
-{"name": "Alice", "merchant": "Restaurant", "amount": 442.81, "purchase_location": 66767, "home_location": 64469, "type": "Debit", "timestamp": "2025-02-19 22:53:55"}
-{"name": "Alice", "merchant": "Restaurant", "amount": 469.24, "purchase_location": 64448, "home_location": 66006, "type": "Credit", "timestamp": "2025-02-19 22:54:00"}
-{"name": "Bob", "merchant": "Retail Store", "amount": 260.46, "purchase_location": 65326, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 22:54:05"}
-{"name": "Alice", "merchant": "Retail Store", "amount": 144.63, "purchase_location": 64506, "home_location": 66006, "type": "Debit", "timestamp": "2025-02-19 22:54:10"}
-{"name": "Bob", "merchant": "Grocery", "amount": 192.12, "purchase_location": 65803, "home_location": 64469, "type": "Credit", "timestamp": "2025-02-19 22:54:15"}
-{"name": "Frank", "merchant": "Online Shopping", "amount": 52.95, "purchase_location": 64401, "home_location": 64436, "type": "Debit", "timestamp": "2025-02-19 22:54:20"}
-{"name": "Bob", "merchant": "Online Shopping", "amount": 349.1, "purchase_location": 65742, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 22:54:25"}
-{"name": "Alice", "merchant": "Restaurant", "amount": 371.28, "purchase_location": 64436, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 22:54:30"}
-{"name": "Grace", "merchant": "Retail Store", "amount": 979.67, "purchase_location": 64448, "home_location": 64439, "type": "Credit", "timestamp": "2025-02-19 22:54:35"}
-{"name": "Bob", "merchant": "Grocery", "amount": 235.63, "purchase_location": 66767, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 22:54:40"}
-{"name": "Alice", "merchant": "Grocery", "amount": 867.39, "purchase_location": 65803, "home_location": 64067, "type": "Credit", "timestamp": "2025-02-19 22:54:45"}
-{"name": "Frank", "merchant": "Gas Station", "amount": 453.02, "purchase_location": 64436, "home_location": 64456, "type": "Credit", "timestamp": "2025-02-19 22:54:50"}
-{"name": "Grace", "merchant": "Online Shopping", "amount": 486.33, "purchase_location": 64461, "home_location": 65326, "type": "Debit", "timestamp": "2025-02-19 22:54:55"}
-{"name": "Grace", "merchant": "Restaurant", "amount": 193.33, "purchase_location": 65742, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 22:55:00"}
-{"name": "Eve", "merchant": "Gas Station", "amount": 339.24, "purchase_location": 65326, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 22:55:05"}
-{"name": "Grace", "merchant": "Grocery", "amount": 890.94, "purchase_location": 64448, "home_location": 64448, "type": "Credit", "timestamp": "2025-02-19 22:55:10"}
-{"name": "Charlie", "merchant": "Gas Station", "amount": 975.91, "purchase_location": 64461, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 22:55:15"}
-{"name": "Frank", "merchant": "Retail Store", "amount": 154.29, "purchase_location": 64506, "home_location": 64067, "type": "Debit", "timestamp": "2025-02-19 22:55:20"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 795.25, "purchase_location": 66032, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 22:55:25"}
-{"name": "Grace", "merchant": "Gas Station", "amount": 539.09, "purchase_location": 64461, "home_location": 64048, "type": "Debit", "timestamp": "2025-02-19 22:55:30"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 679.81, "purchase_location": 64436, "home_location": 64739, "type": "Credit", "timestamp": "2025-02-19 22:55:35"}
-{"name": "Bob", "merchant": "Online Shopping", "amount": 678.22, "purchase_location": 66032, "home_location": 64461, "type": "Credit", "timestamp": "2025-02-19 22:55:40"}
-{"name": "Grace", "merchant": "Gas Station", "amount": 352.36, "purchase_location": 66006, "home_location": 64461, "type": "Debit", "timestamp": "2025-02-19 22:55:45"}
-{"name": "Alice", "merchant": "Grocery", "amount": 797.8, "purchase_location": 64506, "home_location": 64448, "type": "Credit", "timestamp": "2025-02-19 22:55:50"}
-{"name": "Grace", "merchant": "Gas Station", "amount": 347.1, "purchase_location": 64461, "home_location": 65803, "type": "Credit", "timestamp": "2025-02-19 22:55:55"}
-{"name": "Alice", "merchant": "Online Shopping", "amount": 52.31, "purchase_location": 64739, "home_location": 64067, "type": "Credit", "timestamp": "2025-02-19 22:56:00"}
-{"name": "Bob", "merchant": "Retail Store", "amount": 446.66, "purchase_location": 64067, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 22:56:05"}
-{"name": "Eve", "merchant": "Gas Station", "amount": 369.94, "purchase_location": 66006, "home_location": 65803, "type": "Credit", "timestamp": "2025-02-19 22:56:10"}
-{"name": "Grace", "merchant": "Grocery", "amount": 330.5, "purchase_location": 64739, "home_location": 65326, "type": "Credit", "timestamp": "2025-02-19 22:56:15"}
-{"name": "Frank", "merchant": "Gas Station", "amount": 653.34, "purchase_location": 66006, "home_location": 64461, "type": "Debit", "timestamp": "2025-02-19 22:56:20"}
-{"name": "Alice", "merchant": "Grocery", "amount": 332.4, "purchase_location": 66006, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 22:56:25"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 133.96, "purchase_location": 64436, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 22:56:30"}
-{"name": "Charlie", "merchant": "Online Shopping", "amount": 246.63, "purchase_location": 64436, "home_location": 64456, "type": "Credit", "timestamp": "2025-02-19 22:56:35"}
-{"name": "Frank", "merchant": "Restaurant", "amount": 254.73, "purchase_location": 64401, "home_location": 64469, "type": "Credit", "timestamp": "2025-02-19 22:56:40"}
-{"name": "Eve", "merchant": "Restaurant", "amount": 623.14, "purchase_location": 64461, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 22:56:45"}
-{"name": "Eve", "merchant": "Retail Store", "amount": 51.97, "purchase_location": 65803, "home_location": 65742, "type": "Credit", "timestamp": "2025-02-19 22:56:50"}
-{"name": "Grace", "merchant": "Restaurant", "amount": 961.8, "purchase_location": 64506, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 22:56:55"}
-{"name": "Alice", "merchant": "Gas Station", "amount": 607.28, "purchase_location": 66767, "home_location": 64067, "type": "Debit", "timestamp": "2025-02-19 22:57:00"}
-{"name": "Alice", "merchant": "Gas Station", "amount": 122.17, "purchase_location": 66767, "home_location": 64067, "type": "Debit", "timestamp": "2025-02-19 22:57:05"}
-{"name": "Frank", "merchant": "Restaurant", "amount": 491.22, "purchase_location": 66032, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 22:57:10"}
-{"name": "Charlie", "merchant": "Restaurant", "amount": 445.95, "purchase_location": 65742, "home_location": 64461, "type": "Credit", "timestamp": "2025-02-19 22:57:15"}
-{"name": "Charlie", "merchant": "Retail Store", "amount": 272.48, "purchase_location": 65742, "home_location": 64461, "type": "Credit", "timestamp": "2025-02-19 22:57:20"}
+{"name": "Frank", "merchant": "Online Shopping", "amount": 924.52, "purchase_location": 64456, "home_location": 64506, "type": "Credit", "timestamp": "2025-02-19 23:12:01"}
+{"name": "Charlie", "merchant": "Grocery", "amount": 266.18, "purchase_location": 66006, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 23:12:06"}
+{"name": "Grace", "merchant": "Online Shopping", "amount": 984.15, "purchase_location": 64048, "home_location": 66032, "type": "Credit", "timestamp": "2025-02-19 23:12:11"}
+{"name": "Frank", "merchant": "Online Shopping", "amount": 141.94, "purchase_location": 64469, "home_location": 64439, "type": "Debit", "timestamp": "2025-02-19 23:12:16"}
+{"name": "Grace", "merchant": "Gas Station", "amount": 837.23, "purchase_location": 64067, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 23:12:21"}
+{"name": "Charlie", "merchant": "Online Shopping", "amount": 90.31, "purchase_location": 66767, "home_location": 65803, "type": "Debit", "timestamp": "2025-02-19 23:12:26"}
+{"name": "Charlie", "merchant": "Retail Store", "amount": 489.17, "purchase_location": 65803, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 23:12:31"}
+{"name": "Eve", "merchant": "Grocery", "amount": 66.09, "purchase_location": 64461, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 23:12:36"}
+{"name": "Grace", "merchant": "Retail Store", "amount": 153.93, "purchase_location": 64633, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 23:12:41"}
+{"name": "Bob", "merchant": "Gas Station", "amount": 803.31, "purchase_location": 64067, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 23:12:46"}
+{"name": "Charlie", "merchant": "Online Shopping", "amount": 329.81, "purchase_location": 64730, "home_location": 66006, "type": "Debit", "timestamp": "2025-02-19 23:12:51"}
+{"name": "Frank", "merchant": "Online Shopping", "amount": 57.87, "purchase_location": 64730, "home_location": 64067, "type": "Credit", "timestamp": "2025-02-19 23:12:56"}
+{"name": "Frank", "merchant": "Restaurant", "amount": 482.37, "purchase_location": 65326, "home_location": 65803, "type": "Credit", "timestamp": "2025-02-19 23:13:01"}
+{"name": "Bob", "merchant": "Retail Store", "amount": 962.91, "purchase_location": 66032, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 23:13:06"}
+{"name": "Eve", "merchant": "Gas Station", "amount": 492.38, "purchase_location": 66767, "home_location": 66032, "type": "Credit", "timestamp": "2025-02-19 23:13:11"}
+{"name": "Grace", "merchant": "Grocery", "amount": 491.82, "purchase_location": 64067, "home_location": 64456, "type": "Credit", "timestamp": "2025-02-19 23:13:16"}
+{"name": "Charlie", "merchant": "Gas Station", "amount": 918.25, "purchase_location": 64401, "home_location": 65326, "type": "Debit", "timestamp": "2025-02-19 23:13:21"}
+{"name": "Bob", "merchant": "Grocery", "amount": 754.5, "purchase_location": 64436, "home_location": 64730, "type": "Credit", "timestamp": "2025-02-19 23:13:26"}
+{"name": "Charlie", "merchant": "Retail Store", "amount": 747.02, "purchase_location": 66006, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 23:13:31"}
+{"name": "Eve", "merchant": "Online Shopping", "amount": 833.73, "purchase_location": 64448, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 23:13:36"}
+{"name": "Grace", "merchant": "Online Shopping", "amount": 643.38, "purchase_location": 66006, "home_location": 64469, "type": "Credit", "timestamp": "2025-02-19 23:13:41"}
+{"name": "Eve", "merchant": "Online Shopping", "amount": 450.57, "purchase_location": 64633, "home_location": 64456, "type": "Credit", "timestamp": "2025-02-19 23:13:46"}
+{"name": "Bob", "merchant": "Gas Station", "amount": 916.07, "purchase_location": 64469, "home_location": 64730, "type": "Credit", "timestamp": "2025-02-19 23:13:51"}
+{"name": "Frank", "merchant": "Grocery", "amount": 71.65, "purchase_location": 64401, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 23:13:56"}
+{"name": "Frank", "merchant": "Gas Station", "amount": 192.04, "purchase_location": 66006, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 23:14:01"}
+{"name": "Bob", "merchant": "Restaurant", "amount": 944.85, "purchase_location": 64439, "home_location": 66032, "type": "Debit", "timestamp": "2025-02-19 23:14:06"}
+{"name": "Alice", "merchant": "Restaurant", "amount": 779.01, "purchase_location": 64469, "home_location": 64730, "type": "Credit", "timestamp": "2025-02-19 23:14:11"}
+{"name": "Bob", "merchant": "Gas Station", "amount": 415.53, "purchase_location": 64439, "home_location": 64730, "type": "Credit", "timestamp": "2025-02-19 23:14:16"}
+{"name": "Frank", "merchant": "Gas Station", "amount": 495.31, "purchase_location": 64401, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 23:14:21"}
+{"name": "Alice", "merchant": "Grocery", "amount": 296.14, "purchase_location": 64067, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 23:14:26"}
+{"name": "Charlie", "merchant": "Retail Store", "amount": 49.15, "purchase_location": 66767, "home_location": 64456, "type": "Credit", "timestamp": "2025-02-19 23:14:31"}
+{"name": "Eve", "merchant": "Gas Station", "amount": 565.58, "purchase_location": 64048, "home_location": 66767, "type": "Credit", "timestamp": "2025-02-19 23:14:36"}
+{"name": "Charlie", "merchant": "Restaurant", "amount": 551.8, "purchase_location": 64401, "home_location": 64730, "type": "Credit", "timestamp": "2025-02-19 23:14:41"}
+{"name": "Eve", "merchant": "Grocery", "amount": 347.16, "purchase_location": 65803, "home_location": 65326, "type": "Debit", "timestamp": "2025-02-19 23:14:46"}
+{"name": "Eve", "merchant": "Online Shopping", "amount": 115.26, "purchase_location": 66032, "home_location": 64448, "type": "Debit", "timestamp": "2025-02-19 23:14:51"}
+{"name": "Frank", "merchant": "Grocery", "amount": 274.39, "purchase_location": 64067, "home_location": 65803, "type": "Debit", "timestamp": "2025-02-19 23:14:56"}
+{"name": "Grace", "merchant": "Online Shopping", "amount": 567.71, "purchase_location": 64739, "home_location": 65803, "type": "Debit", "timestamp": "2025-02-19 23:15:01"}
+{"name": "Charlie", "merchant": "Gas Station", "amount": 690.65, "purchase_location": 66767, "home_location": 64436, "type": "Debit", "timestamp": "2025-02-19 23:15:06"}
+{"name": "Bob", "merchant": "Online Shopping", "amount": 907.4, "purchase_location": 64436, "home_location": 64448, "type": "Debit", "timestamp": "2025-02-19 23:15:11"}
+{"name": "Grace", "merchant": "Gas Station", "amount": 712.27, "purchase_location": 66032, "home_location": 64448, "type": "Debit", "timestamp": "2025-02-19 23:15:16"}
+{"name": "Frank", "merchant": "Restaurant", "amount": 751.79, "purchase_location": 66032, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 23:15:21"}
+{"name": "Bob", "merchant": "Grocery", "amount": 830.43, "purchase_location": 66767, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 23:15:26"}
+{"name": "Grace", "merchant": "Gas Station", "amount": 515.37, "purchase_location": 66767, "home_location": 64448, "type": "Debit", "timestamp": "2025-02-19 23:15:31"}
+{"name": "Eve", "merchant": "Restaurant", "amount": 27.09, "purchase_location": 65326, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 23:15:36"}
+{"name": "Grace", "merchant": "Grocery", "amount": 148.02, "purchase_location": 64048, "home_location": 65803, "type": "Credit", "timestamp": "2025-02-19 23:15:41"}
+{"name": "Alice", "merchant": "Retail Store", "amount": 804.25, "purchase_location": 64461, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 23:15:46"}
+{"name": "Charlie", "merchant": "Online Shopping", "amount": 518.73, "purchase_location": 64436, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 23:15:51"}
+{"name": "Bob", "merchant": "Online Shopping", "amount": 105.13, "purchase_location": 64461, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 23:15:56"}
+{"name": "Frank", "merchant": "Retail Store", "amount": 834.08, "purchase_location": 66767, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 23:16:01"}
+{"name": "Grace", "merchant": "Retail Store", "amount": 38.59, "purchase_location": 64461, "home_location": 65742, "type": "Credit", "timestamp": "2025-02-19 23:16:06"}
+{"name": "Grace", "merchant": "Grocery", "amount": 772.39, "purchase_location": 65803, "home_location": 64401, "type": "Credit", "timestamp": "2025-02-19 23:16:11"}
+{"name": "Bob", "merchant": "Gas Station", "amount": 302.06, "purchase_location": 65326, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 23:16:16"}
+{"name": "Charlie", "merchant": "Retail Store", "amount": 677.2, "purchase_location": 64469, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 23:16:21"}
+{"name": "Grace", "merchant": "Restaurant", "amount": 720.48, "purchase_location": 64633, "home_location": 65326, "type": "Credit", "timestamp": "2025-02-19 23:16:26"}
+{"name": "Alice", "merchant": "Grocery", "amount": 562.09, "purchase_location": 64448, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 23:16:31"}
+{"name": "Grace", "merchant": "Grocery", "amount": 428.8, "purchase_location": 64739, "home_location": 66006, "type": "Credit", "timestamp": "2025-02-19 23:16:36"}
+{"name": "Grace", "merchant": "Restaurant", "amount": 718.82, "purchase_location": 64506, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 23:16:41"}
+{"name": "Charlie", "merchant": "Retail Store", "amount": 262.93, "purchase_location": 65803, "home_location": 64067, "type": "Debit", "timestamp": "2025-02-19 23:16:46"}
+{"name": "Eve", "merchant": "Grocery", "amount": 850.04, "purchase_location": 64461, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 23:16:51"}
+{"name": "Frank", "merchant": "Online Shopping", "amount": 795.86, "purchase_location": 66032, "home_location": 64439, "type": "Debit", "timestamp": "2025-02-19 23:16:56"}
+{"name": "Grace", "merchant": "Online Shopping", "amount": 568.69, "purchase_location": 64439, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 23:17:01"}
+{"name": "Eve", "merchant": "Grocery", "amount": 697.09, "purchase_location": 66032, "home_location": 66032, "type": "Debit", "timestamp": "2025-02-19 23:17:06"}
+{"name": "Charlie", "merchant": "Restaurant", "amount": 454.16, "purchase_location": 64739, "home_location": 64461, "type": "Debit", "timestamp": "2025-02-19 23:17:11"}
+{"name": "Eve", "merchant": "Restaurant", "amount": 873.94, "purchase_location": 64439, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 23:17:16"}
+{"name": "Alice", "merchant": "Gas Station", "amount": 379.67, "purchase_location": 66032, "home_location": 66006, "type": "Debit", "timestamp": "2025-02-19 23:17:21"}
+{"name": "Frank", "merchant": "Gas Station", "amount": 819.67, "purchase_location": 64067, "home_location": 64469, "type": "Debit", "timestamp": "2025-02-19 23:17:26"}
+{"name": "Alice", "merchant": "Restaurant", "amount": 977.54, "purchase_location": 64456, "home_location": 64436, "type": "Credit", "timestamp": "2025-02-19 23:17:31"}
+{"name": "Alice", "merchant": "Gas Station", "amount": 755.7, "purchase_location": 64439, "home_location": 64739, "type": "Debit", "timestamp": "2025-02-19 23:17:36"}
+{"name": "Alice", "merchant": "Restaurant", "amount": 325.04, "purchase_location": 64436, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 23:17:41"}
+{"name": "Grace", "merchant": "Retail Store", "amount": 452.06, "purchase_location": 64436, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 23:17:46"}
+{"name": "Alice", "merchant": "Retail Store", "amount": 608.61, "purchase_location": 66767, "home_location": 64439, "type": "Credit", "timestamp": "2025-02-19 23:17:51"}
+{"name": "Eve", "merchant": "Restaurant", "amount": 885.49, "purchase_location": 64739, "home_location": 64401, "type": "Debit", "timestamp": "2025-02-19 23:17:56"}
+{"name": "Eve", "merchant": "Retail Store", "amount": 973.05, "purchase_location": 66767, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 23:18:01"}
+{"name": "Grace", "merchant": "Online Shopping", "amount": 827.85, "purchase_location": 64067, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 23:18:06"}
+{"name": "Grace", "merchant": "Grocery", "amount": 858.06, "purchase_location": 64401, "home_location": 65742, "type": "Credit", "timestamp": "2025-02-19 23:18:11"}
+{"name": "Charlie", "merchant": "Online Shopping", "amount": 422.62, "purchase_location": 64469, "home_location": 64048, "type": "Credit", "timestamp": "2025-02-19 23:18:16"}
+{"name": "Grace", "merchant": "Online Shopping", "amount": 909.89, "purchase_location": 64461, "home_location": 65803, "type": "Debit", "timestamp": "2025-02-19 23:18:21"}
+{"name": "Alice", "merchant": "Restaurant", "amount": 994.72, "purchase_location": 65742, "home_location": 65742, "type": "Credit", "timestamp": "2025-02-19 23:18:26"}
+{"name": "Bob", "merchant": "Restaurant", "amount": 304.62, "purchase_location": 66006, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 23:18:31"}
+{"name": "Charlie", "merchant": "Online Shopping", "amount": 545.6, "purchase_location": 64730, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 23:18:36"}
+{"name": "Grace", "merchant": "Retail Store", "amount": 568.22, "purchase_location": 64739, "home_location": 64633, "type": "Debit", "timestamp": "2025-02-19 23:18:41"}
+{"name": "Frank", "merchant": "Restaurant", "amount": 816.67, "purchase_location": 65803, "home_location": 66767, "type": "Debit", "timestamp": "2025-02-19 23:18:46"}
+{"name": "Frank", "merchant": "Grocery", "amount": 620.98, "purchase_location": 64730, "home_location": 64048, "type": "Debit", "timestamp": "2025-02-19 23:18:51"}
+{"name": "Grace", "merchant": "Retail Store", "amount": 109.39, "purchase_location": 66006, "home_location": 64730, "type": "Credit", "timestamp": "2025-02-19 23:18:56"}
+{"name": "Bob", "merchant": "Restaurant", "amount": 504.41, "purchase_location": 64448, "home_location": 65742, "type": "Debit", "timestamp": "2025-02-19 23:19:01"}
+{"name": "Frank", "merchant": "Gas Station", "amount": 802.17, "purchase_location": 66006, "home_location": 64439, "type": "Credit", "timestamp": "2025-02-19 23:19:06"}
+{"name": "Charlie", "merchant": "Grocery", "amount": 833.9, "purchase_location": 64506, "home_location": 66006, "type": "Credit", "timestamp": "2025-02-19 23:19:11"}
+{"name": "Charlie", "merchant": "Restaurant", "amount": 595.8, "purchase_location": 64067, "home_location": 64506, "type": "Credit", "timestamp": "2025-02-19 23:19:16"}
+{"name": "Alice", "merchant": "Gas Station", "amount": 532.94, "purchase_location": 64461, "home_location": 64633, "type": "Credit", "timestamp": "2025-02-19 23:19:21"}
+{"name": "Bob", "merchant": "Retail Store", "amount": 670.74, "purchase_location": 64739, "home_location": 64448, "type": "Debit", "timestamp": "2025-02-19 23:19:26"}
+{"name": "Alice", "merchant": "Gas Station", "amount": 101.84, "purchase_location": 66767, "home_location": 64506, "type": "Debit", "timestamp": "2025-02-19 23:19:31"}
+{"name": "Bob", "merchant": "Restaurant", "amount": 679.48, "purchase_location": 66767, "home_location": 64730, "type": "Debit", "timestamp": "2025-02-19 23:19:36"}
+{"name": "Eve", "merchant": "Retail Store", "amount": 950.52, "purchase_location": 66032, "home_location": 65326, "type": "Debit", "timestamp": "2025-02-19 23:19:41"}
+{"name": "Bob", "merchant": "Gas Station", "amount": 805.44, "purchase_location": 66006, "home_location": 64448, "type": "Debit", "timestamp": "2025-02-19 23:19:46"}

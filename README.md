@@ -69,8 +69,8 @@ The pipeline generates real-time visual insights:
 ### **2️⃣ Top Fraudulent Merchant Categories**
 - 📊 Bar chart of merchants with the most fraud cases
 
-**Example Visualization:**
-![Fraud Dashboard](screenshot.png)
+**Fraud Visualization:**
+![Fraud Dashboard](images/graph.png)
 
 ---
 

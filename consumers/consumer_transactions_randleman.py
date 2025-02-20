@@ -29,6 +29,78 @@ from utils.utils_producer import verify_services, is_topic_available
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from consumers.sql_lite_config_randleman import init_db, insert_message, insert_fraud, insert_legit_transaction
 
+#####################################
+# Set up Live Visualization
+#####################################
+
+plt.ion()  # Enable interactive mode
+
+fig, axes = plt.subplots(2, 1, figsize=(12, 12))  # Two subplots for real-time updates
+
+# Path to the SQLite database
+DB_PATH = config.get_sqlite_path()
+
+
+def fetch_data():
+    """Fetch the latest transaction data from the SQLite database."""
+    try:
+        with sqlite3.connect(DB_PATH) as conn:
+            cursor = conn.cursor()
+
+            # ✅ Fetch latest fraudulent transactions
+            cursor.execute("SELECT timestamp, amount FROM is_fraud ORDER BY timestamp DESC LIMIT 100")
+            fraud_data = cursor.fetchall()
+
+            # ✅ Fetch latest legitimate transactions
+            cursor.execute("SELECT timestamp, amount FROM legit_transactions ORDER BY timestamp DESC LIMIT 100")
+            legit_data = cursor.fetchall()
+
+        return fraud_data, legit_data
+
+    except Exception as e:
+        logger.error(f"Database error: {e}")
+        return [], []
+
+def update_dashboard():
+    """Fetch latest data and update charts dynamically."""
+    while True:
+        fraud_data, legit_data = fetch_data()
+
+        # Clear previous plots
+        for ax in axes:
+            ax.clear()
+
+        # ✅ Plot 1: Fraud Transactions Over Time
+        if fraud_data:
+            timestamp, amounts = zip(*fraud_data)
+            timestamp = [datetime.datetime.strptime(ts, "%Y-%m-%d %H:%M:%S") for ts in timestamp]  # Convert to datetime
+
+            axes[0].plot(timestamp, amounts, color="red", marker="o", linestyle="-", linewidth=2, label="Fraud Transactions")
+            axes[0].set_title("Fraud Transactions Over Time")
+            axes[0].set_ylabel("Transaction Amount ($)")
+            axes[0].xaxis.set_major_formatter(mdates.DateFormatter("%H:%M:%S"))  # Format x-axis for time
+            axes[0].legend()
+            axes[0].grid(True)
+            plt.xticks(rotation=45)
+
+        # ✅ Plot 2: Legitimate Transactions Over Time
+        if legit_data:
+            timestamp, amounts = zip(*legit_data)
+            timestamp = [datetime.datetime.strptime(ts, "%Y-%m-%d %H:%M:%S") for ts in timestamp]  # Convert to datetime
+
+            axes[1].plot(timestamp, amounts, color="blue", marker="o", linestyle="-", linewidth=2, label="Legitimate Transactions")
+            axes[1].set_title("Legitimate Transactions Over Time")
+            axes[1].set_ylabel("Transaction Amount ($)")
+            axes[1].xaxis.set_major_formatter(mdates.DateFormatter("%H:%M:%S"))  # Format x-axis for time
+            axes[1].legend()
+            axes[1].grid(True)
+            plt.xticks(rotation=45)
+
+        # Refresh plot
+        plt.draw()
+        plt.pause(2)  # Update every 2 seconds
+
+
 # Define Fraud Detection Function
 def is_fraudulent(transaction):
     """
@@ -232,9 +304,15 @@ def main():
 
     logger.info("STEP 4. Begin consuming and storing messages.")
     try:
-        consume_messages_from_kafka(
-            topic, kafka_url, group_id, sqlite_path, interval_secs
-        )
+        import threading
+        consumer_thread = threading.Thread(target=consume_messages_from_kafka, args=(topic, kafka_url, group_id, sqlite_path, interval_secs))
+        consumer_thread.daemon = True
+        consumer_thread.start()
+        # consume_messages_from_kafka(
+        #     topic, kafka_url, group_id, sqlite_path, interval_secs
+        # )
+        # Start the real-time dashboard
+        update_dashboard()
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
     except Exception as e:

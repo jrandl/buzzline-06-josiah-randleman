@@ -42,7 +42,7 @@ py -m producers.producer_randleman
 
 ---
 
-### 📥 **Kafka Consumer (`consumer_josiah_randleman.py`)**
+### 📥 **Kafka Consumer (`consumer_transactions_randleman.py`)**
 The consumer listens for incoming transactions, applies **fraud detection rules**, and stores results in an SQLite database.
 
 #### **Fraud Detection Rules**

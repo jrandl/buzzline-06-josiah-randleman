@@ -12,6 +12,14 @@ This project implements a **Kafka-based fraud detection pipeline** that processe
 
 ---
 
+## Start Zookeeper and Kafka (Takes 2 Terminals)
+
+If Zookeeper and Kafka are not already running, you'll need to restart them.
+See instructions at [SETUP-KAFKA.md] to:
+
+1. Start Zookeeper Service ([link](https://github.com/denisecase/buzzline-02-case/blob/main/docs/SETUP-KAFKA.md#step-7-start-zookeeper-service-terminal-1))
+2. Start Kafka Service ([link](https://github.com/denisecase/buzzline-02-case/blob/main/docs/SETUP-KAFKA.md#step-8-start-kafka-terminal-2))
+
 ## How It Works
 
 ### 🔄 **Kafka Producer (`producer_randleman.py`)**

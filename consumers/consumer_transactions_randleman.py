@@ -29,6 +29,42 @@ from utils.utils_producer import verify_services, is_topic_available
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from consumers.sql_lite_config_randleman import init_db, insert_message
 
+# Define Fraud Detection Function
+def is_fraudulent(transaction):
+    """
+    Determine if a transaction is fraudulent based on predefined rules.
+    
+    Args:
+        transaction (dict): The transaction data.
+    
+    Returns:
+        bool: True if fraudulent, False otherwise.
+    """
+    amount = transaction.get("amount", 0)
+    purchase_location = transaction.get("purchase_location")
+    home_location = transaction.get("home_location")
+    merchant = transaction.get("merchant")
+    card_type = transaction.get("type")
+
+    # Rule 1: Large transactions (Over $900 are suspicious)
+    if amount > 900:
+        return True
+
+    # Rule 2: Location mismatch (Far from home and large purchase)
+    if purchase_location != home_location and amount > 500:
+        return True
+
+    # Rule 3: Suspicious Merchant Categories (Large purchases at uncommon places)
+    risky_merchants = ["Online Shopping", "Retail Store"]
+    if merchant in risky_merchants and amount > 700:
+        return True
+
+    # Rule 4: Unusual Card Type Usage (Sudden high use of debit for big transactions)
+    if card_type == "Debit" and amount > 800:
+        return True
+
+    return False
+
 #####################################
 # Function to process a single message
 # #####################################
@@ -132,8 +168,17 @@ def consume_messages_from_kafka(
         # message.value is a Python dictionary
         for message in consumer:
             processed_message = process_message(message.value)
+            is_fraud = is_fraudulent(processed_message) # added
+
+            if is_fraud: # added
+                logger.warning(f"🚨 FRAUD DETECTED: {processed_message}") # added
+            else: # added
+                logger.info(f"✅ Legitimate Transaction: {processed_message}") # added
+
             if processed_message:
                 insert_message(processed_message, sql_path)
+
+
 
     except Exception as e:
         logger.error(f"ERROR: Could not consume messages from Kafka: {e}")

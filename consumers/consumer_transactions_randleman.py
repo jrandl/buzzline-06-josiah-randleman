@@ -27,7 +27,7 @@ from utils.utils_producer import verify_services, is_topic_available
 
 # Ensure the parent directory is in sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from consumers.sql_lite_config_randleman import init_db, insert_message
+from consumers.sql_lite_config_randleman import init_db, insert_message, insert_fraud, insert_legit_transaction
 
 # Define Fraud Detection Function
 def is_fraudulent(transaction):
@@ -172,8 +172,10 @@ def consume_messages_from_kafka(
 
             if is_fraud: # added
                 logger.warning(f"🚨 FRAUD DETECTED: {processed_message}") # added
+                insert_fraud(processed_message, sql_path)
             else: # added
                 logger.info(f"✅ Legitimate Transaction: {processed_message}") # added
+                insert_legit_transaction(processed_message, sql_path)
 
             if processed_message:
                 insert_message(processed_message, sql_path)

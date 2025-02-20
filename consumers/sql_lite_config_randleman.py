@@ -37,9 +37,43 @@ def init_db(db_path: pathlib.Path):
 
             cursor.execute("DROP TABLE IF EXISTS transactions;")
 
+            cursor.execute("DROP TABLE IF EXISTS is_fraud;")
+
+            cursor.execute("DROP TABLE IF EXISTS legit_transactions;")
+
             cursor.execute(
                 """
                 CREATE TABLE IF NOT EXISTS transactions (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name TEXT,
+                    merchant TEXT,
+                    amount REAL,
+                    purchase_location INTEGER,
+                    home_location INTEGER,
+                    type TEXT,
+                    timestamp TEXT
+                )
+                """
+            )
+
+            cursor.execute(
+                """
+                CREATE TABLE IF NOT EXISTS is_fraud (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name TEXT,
+                    merchant TEXT,
+                    amount REAL,
+                    purchase_location INTEGER,
+                    home_location INTEGER,
+                    type TEXT,
+                    timestamp TEXT
+                )
+                """
+            )
+
+            cursor.execute(
+                """
+                CREATE TABLE IF NOT EXISTS legit_transactions (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     name TEXT,
                     merchant TEXT,
@@ -113,7 +147,113 @@ def insert_message(message: dict, db_path: pathlib.Path) -> None:
     except Exception as e:
         logger.error(f"ERROR: Failed to insert message into the database: {e}")
 
+#####################################
+# Define Function to for insert_fraud
+#####################################
 
+
+def insert_fraud(message: dict, db_path: pathlib.Path) -> None:
+    """
+    Insert a single processed message into the SQLite database.
+
+    Args:
+    - message (dict): Processed message to insert.
+    - db_path (pathlib.Path): Path to the SQLite database file.
+    """
+    logger.info("Calling SQLite insert_fraud() with:")
+    logger.info(f"{message=}")
+    logger.info(f"{db_path=}")
+
+    try:
+        # Extract fields safely from the message dictionary
+        category = message.get("category", "unknown")
+        author = message.get("author", "anonymous")
+        sentiment = float(message.get("sentiment", 0.0))
+        timestamp = message.get("timestamp", "unknown")
+        message_text = message.get("message", "")
+        keyword_mentioned = message.get("keyword_mentioned", "")
+        message_length = int(message.get("message_length", 0))
+
+        with sqlite3.connect(db_path) as conn:
+            cursor = conn.cursor()
+
+            cursor.execute(
+                """
+                INSERT INTO is_fraud (name, merchant, amount, purchase_location, home_location, type, timestamp)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    message.get("name"),
+                    message.get("merchant"),
+                    float(message.get("amount", 0.0)),
+                    int(message.get("purchase_location", 0)),
+                    int(message.get("home_location", 0)),
+                    message.get("type"),
+                    message.get("timestamp"),
+                ),
+            )
+
+            
+
+            conn.commit()
+            logger.info("Inserted one message into the fraud database.")
+
+    except Exception as e:
+        logger.error(f"ERROR: Failed to insert message into the fraud database: {e}")
+
+#####################################
+# Define Function to for legit_transactions
+#####################################
+
+
+def insert_legit_transaction(message: dict, db_path: pathlib.Path) -> None:
+    """
+    Insert a single processed message into the SQLite database.
+
+    Args:
+    - message (dict): Processed message to insert.
+    - db_path (pathlib.Path): Path to the SQLite database file.
+    """
+    logger.info("Calling SQLite insert_legit_transaction() with:")
+    logger.info(f"{message=}")
+    logger.info(f"{db_path=}")
+
+    try:
+        # Extract fields safely from the message dictionary
+        category = message.get("category", "unknown")
+        author = message.get("author", "anonymous")
+        sentiment = float(message.get("sentiment", 0.0))
+        timestamp = message.get("timestamp", "unknown")
+        message_text = message.get("message", "")
+        keyword_mentioned = message.get("keyword_mentioned", "")
+        message_length = int(message.get("message_length", 0))
+
+        with sqlite3.connect(db_path) as conn:
+            cursor = conn.cursor()
+
+            cursor.execute(
+                """
+                INSERT INTO legit_transactions (name, merchant, amount, purchase_location, home_location, type, timestamp)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    message.get("name"),
+                    message.get("merchant"),
+                    float(message.get("amount", 0.0)),
+                    int(message.get("purchase_location", 0)),
+                    int(message.get("home_location", 0)),
+                    message.get("type"),
+                    message.get("timestamp"),
+                ),
+            )
+
+            
+
+            conn.commit()
+            logger.info("Inserted one message into the legit transaction database.")
+
+    except Exception as e:
+        logger.error(f"ERROR: Failed to insert message into the legit transaction database: {e}")       
 
 #####################################
 # Define Function to Delete a Message from the Database

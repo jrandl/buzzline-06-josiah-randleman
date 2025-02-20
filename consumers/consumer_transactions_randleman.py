@@ -70,35 +70,51 @@ def update_dashboard():
         for ax in axes:
             ax.clear()
 
-        # ✅ Plot 1: Fraud Transactions Over Time
-        if fraud_data:
-            timestamp, amounts = zip(*fraud_data)
-            timestamp = [datetime.datetime.strptime(ts, "%Y-%m-%d %H:%M:%S") for ts in timestamp]  # Convert to datetime
+        # ✅ Plot 1: Fraud vs Legitimate Transactions Over Time
+        if fraud_data or legit_data:
+            # Process Fraud Data
+            if fraud_data:
+                fraud_timestamps, fraud_amounts = zip(*fraud_data)
+                fraud_timestamps = [datetime.datetime.strptime(ts, "%Y-%m-%d %H:%M:%S") for ts in fraud_timestamps]  
+                axes[0].plot(fraud_timestamps, fraud_amounts, color="red", marker="o", linestyle="-", linewidth=2, label="Fraud Transactions")
 
-            axes[0].plot(timestamp, amounts, color="red", marker="o", linestyle="-", linewidth=2, label="Fraud Transactions")
-            axes[0].set_title("Fraud Transactions Over Time")
+            # Process Legitimate Data
+            if legit_data:
+                legit_timestamps, legit_amounts = zip(*legit_data)
+                legit_timestamps = [datetime.datetime.strptime(ts, "%Y-%m-%d %H:%M:%S") for ts in legit_timestamps]  
+                axes[0].plot(legit_timestamps, legit_amounts, color="blue", marker="o", linestyle="-", linewidth=2, label="Legitimate Transactions")
+
+            axes[0].set_title("Fraud vs Legitimate Transactions Over Time")
             axes[0].set_ylabel("Transaction Amount ($)")
             axes[0].xaxis.set_major_formatter(mdates.DateFormatter("%H:%M:%S"))  # Format x-axis for time
             axes[0].legend()
             axes[0].grid(True)
             plt.xticks(rotation=45)
 
-        # ✅ Plot 2: Legitimate Transactions Over Time
-        if legit_data:
-            timestamp, amounts = zip(*legit_data)
-            timestamp = [datetime.datetime.strptime(ts, "%Y-%m-%d %H:%M:%S") for ts in timestamp]  # Convert to datetime
+        # ✅ Plot 2: Top Fraudulent Merchant Categories
+        with sqlite3.connect(DB_PATH) as conn:
+            cursor = conn.cursor()
+            cursor.execute("""
+                SELECT merchant, COUNT(*) as count 
+                FROM is_fraud 
+                GROUP BY merchant 
+                ORDER BY count DESC 
+                LIMIT 5
+            """)
+            top_merchants = cursor.fetchall()
 
-            axes[1].plot(timestamp, amounts, color="blue", marker="o", linestyle="-", linewidth=2, label="Legitimate Transactions")
-            axes[1].set_title("Legitimate Transactions Over Time")
-            axes[1].set_ylabel("Transaction Amount ($)")
-            axes[1].xaxis.set_major_formatter(mdates.DateFormatter("%H:%M:%S"))  # Format x-axis for time
-            axes[1].legend()
-            axes[1].grid(True)
+        if top_merchants:
+            merchants, counts = zip(*top_merchants)
+            axes[1].bar(merchants, counts, color="purple")
+            axes[1].set_title("Top Fraudulent Merchant Categories")
+            axes[1].set_ylabel("Number of Fraudulent Transactions")
+            axes[1].set_xlabel("Merchant Category")
             plt.xticks(rotation=45)
 
         # Refresh plot
         plt.draw()
         plt.pause(2)  # Update every 2 seconds
+
 
 
 # Define Fraud Detection Function

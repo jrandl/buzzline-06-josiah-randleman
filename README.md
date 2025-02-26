@@ -11,7 +11,58 @@ This project implements a **Kafka-based fraud detection pipeline** that processe
 ✅ **Merchant category analysis** for fraud trends
 
 ---
+# Manage Our Local Project Virtual Environment
 
+## One-time Only: Create it 
+
+Use the built in venv utility to create a local project virtual environment in a folder named .venv. 
+
+Windows: 
+```shell
+py -3.11 -m venv .venv
+```
+
+Mac/Linux:
+```zsh
+python3 -3.11 -m venv .venv
+```
+## As Needed: Activate .venv and Install Packages
+
+Run the following commands to activate our local project virtual environment 
+and install necessary packages. 
+Wait for each command to finish before running the next command. 
+
+Windows: 
+
+```shell
+.venv\Scripts\activate
+py -m pip install --upgrade pip setuptools wheel
+py -m pip install --upgrade -r requirements.txt
+```
+
+Mac/Linux: 
+
+```zsh
+source .venv/bin/activate
+python3 -m pip install --upgrade pip setuptools wheel
+python3 -m pip install --upgrade -r requirements.txt
+```
+
+## Activate Every Time We Open a New Terminal 
+
+Remember to always activate the .venv when opening a new terminal. 
+
+Windows: 
+
+```shell
+.venv\Scripts\activate
+```
+
+Mac/Linux:
+
+```shell
+source .venv/bin/activate
+```
 ## Start Zookeeper and Kafka (Takes 2 Terminals)
 
 If Zookeeper and Kafka are not already running, you'll need to restart them.
